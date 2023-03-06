@@ -1,0 +1,67 @@
+<header class="main-header">
+  <h1 class="main-header__title">
+    <span class="main-header__title--blue">
+      ProWay
+    </span>
+    <span class="main-header__title--orange">
+      Computers
+    </span>
+  </h1>
+  
+  <section class="container-menu">
+    <nav class="main-header__menu">
+      <ul>
+        <li>
+          <a routerLink="produtos">
+            <i class="fa-solid fa-computer"></i>
+            Produtos
+          </a>
+        </li>
+        <li>
+          <a routerLink="carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrinho
+            <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="contato">
+            <i class="fa-solid fa-address-book"></i>
+            Contato
+          </a>
+        </li>
+  
+        <li>
+          <a routerLink="">
+            <i class="fa-brands fa-facebook"></i>
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a routerLink="">
+            <i class="fa-brands fa-twitter"></i>
+            Twitter
+          </a>
+        </li>
+  
+        <li>
+          <a routerLink="">
+            <i class="fa-brands fa-linkedin"></i>
+            Linkedin
+          </a>
+        </li>
+  
+        <li>
+          <a routerLink="">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <app-barra-pesquisa></app-barra-pesquisa>
+  </section>
+
+</header>
